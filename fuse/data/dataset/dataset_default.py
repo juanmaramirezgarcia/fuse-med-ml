@@ -241,6 +241,7 @@ class FuseDatasetDefault(FuseDatasetBase):
         else:  # otherwise, dictionary that includes multiple processors
             sample_data['input'] = {}
             all_keys = FuseUtilsHierarchicalDict.get_all_keys(processors)
+            print(all_keys)
             for key in all_keys:
                 try:
                     processor = FuseUtilsHierarchicalDict.get(processors, key)
